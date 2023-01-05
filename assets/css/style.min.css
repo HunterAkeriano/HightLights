@@ -468,3 +468,111 @@ header:hover {
   /* 4 */
   color: #FFFFFF;
 }
+
+.philosophy {
+  background-color: #FFFFFF;
+  color: black;
+}
+.philosophy__content {
+  padding-top: 140px;
+  padding-bottom: 78px;
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.philosophy__content-text {
+  max-width: 515px;
+  margin-top: 100px;
+}
+.philosophy__content-text h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+  /* 1 */
+  color: #080808;
+  cursor: default;
+  margin-bottom: 28px;
+}
+.philosophy__content-text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  /* 1 */
+  color: #080808;
+  opacity: 0.7;
+  margin-top: 24px;
+  cursor: default;
+}
+.philosophy__content-text .philosophy-link {
+  margin-top: 64px;
+  position: relative;
+}
+.philosophy__content-text .philosophy-link a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  /* 1 */
+  color: #080808;
+}
+.philosophy__content-text .philosophy-link a span {
+  color: rgba(49, 49, 49, 0.2);
+}
+.philosophy__content-text .philosophy-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 56px;
+  height: 1px;
+  background: rgba(49, 49, 49, 0.2);
+  left: 120px;
+  top: 50%;
+  margin-top: -0.5px;
+}
+.philosophy__bottom {
+  padding-left: 100px;
+  padding-bottom: 140px;
+  display: flex;
+}
+.philosophy__bottom-img {
+  position: relative;
+}
+.philosophy__bottom-img .img-position {
+  position: absolute;
+  right: -200px;
+  top: -140px;
+}
+.philosophy__bottom-text {
+  max-width: 380px;
+  margin: 0 auto;
+  margin-top: 150px;
+  cursor: default;
+  position: relative;
+}
+.philosophy__bottom-text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 170.66%;
+  /* or 34px */
+  /* 1 */
+  color: #080808;
+}
+.philosophy__bottom-text::before {
+  content: "";
+  position: absolute;
+  background: url("../images/philosophy/cav.svg") no-repeat;
+  width: 18px;
+  height: 44px;
+  top: 0;
+  left: -32px;
+}
