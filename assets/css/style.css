@@ -96,13 +96,13 @@ header {
     font-family: "Montserrat", sans-serif;
     opacity: 0.8;
     transition: all 0.3s;
-    background-color: rgba(120, 120, 120, 0.5);
+    background-color: rgb(89, 87, 87);
     z-index: 10;
 }
 
 header:hover {
     opacity: 1;
-    background-color: rgb(40, 39, 39);
+    background-color: black;
 }
 
 .header {
@@ -195,33 +195,70 @@ header:hover {
     background-color: rgba(192, 192, 192, 0);
 }
 
-.header .burger {
-    cursor: pointer;
+.header__mobile {
     display: none;
-    transition: 0.3s;
 }
 
-.header .burger .humb {
+.header__mobile .burger {
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 100px;
+    -ms-flex-align: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.header__mobile .burger .humb {
     display: block;
-    background-color: #fff;
-    width: 25px;
-    height: 2px;
-    margin: 5px 0px;
-    transition: 0.3s;
+    width: 28px;
+    height: 1px;
+    background-color: #FFFFFF;
+    margin: 7px 0px;
+    transition: all 0.3s;
 }
 
-.header .burger.active .humb:nth-child(2) {
-    opacity: 0;
+.header__mobile .burger .burger-text {
+    margin-left: 20px;
 }
 
-.header .burger.active .humb:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
+.header__mobile .burger .burger-text p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
 }
 
-.header .burger.active .humb:nth-child(3) {
-    -webkit-transform: translateY(-6px) rotate(-45deg);
-    transform: translateY(-6px) rotate(-45deg);
+.header__mobile .header__content-btn .burger-none {
+    display: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header__mobile .header__content-btn .burger-none .humb {
+    display: block;
+    width: 28px;
+    height: 1px;
+    background-color: #FFFFFF;
+    margin: 7px 0px;
+    transition: all 0.3s;
+}
+
+.header__mobile .header__content-btn .burger-none.active .humb:nth-child(1) {
+    -webkit-transform: translateY(4px) rotate(45deg);
+    transform: translateY(4px) rotate(45deg);
+}
+
+.header__mobile .header__content-btn .burger-none.active .humb:nth-child(2) {
+    -webkit-transform: translateY(-4px) rotate(-45deg);
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+.header__content-secret {
+    display: none;
 }
 
 .swipers {
@@ -419,8 +456,9 @@ header:hover {
     position: absolute;
     left: 0;
     bottom: 40px;
-    width: 50%;
+    width: 60%;
     z-index: 4;
+    pointer-events: none;
 }
 
 .swipers .swipers-bottom .swipers-bottom-cont {
@@ -433,6 +471,7 @@ header:hover {
 }
 
 .swipers .swipers-bottom .swipers-bottom-cont .swipers-bottom-language a {
+    pointer-events: all;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -452,6 +491,8 @@ header:hover {
 }
 
 .swipers .swipers-bottom .swipers-bottom-cont .swipers-bottom-country select {
+    cursor: pointer;
+    pointer-events: painted;
     background: none;
     border: 0;
     -webkit-appearance: none;
@@ -514,6 +555,7 @@ header:hover {
 }
 
 .swipers .swipers-bottom .swipers-bottom-cont .swipers-bottom-phone a {
+    pointer-events: painted;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -523,4 +565,141 @@ header:hover {
     letter-spacing: 0.06em;
   /* 4 */
     color: #FFFFFF;
+}
+
+.swipers .swipers-bottom .swipers-bottom-cont .swipers-bottom-mail a {
+    pointer-events: painted;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+  /* 4 */
+    color: #FFFFFF;
+}
+
+.philosophy {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.philosophy__content {
+    padding-top: 140px;
+    padding-bottom: 78px;
+    padding-left: 100px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.philosophy__content-text {
+    max-width: 515px;
+    margin-top: 100px;
+}
+
+.philosophy__content-text h3 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+  /* identical to box height */
+  /* 1 */
+    color: #080808;
+    cursor: default;
+    margin-bottom: 28px;
+}
+
+.philosophy__content-text p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+  /* 1 */
+    color: #080808;
+    opacity: 0.7;
+    margin-top: 24px;
+    cursor: default;
+}
+
+.philosophy__content-text .philosophy-link {
+    margin-top: 64px;
+    position: relative;
+}
+
+.philosophy__content-text .philosophy-link a {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  /* 1 */
+    color: #080808;
+}
+
+.philosophy__content-text .philosophy-link a span {
+    color: rgba(49, 49, 49, 0.2);
+}
+
+.philosophy__content-text .philosophy-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 1px;
+    background: rgba(49, 49, 49, 0.2);
+    left: 120px;
+    top: 50%;
+    margin-top: -0.5px;
+}
+
+.philosophy__bottom {
+    padding-left: 100px;
+    padding-bottom: 140px;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.philosophy__bottom-img {
+    position: relative;
+}
+
+.philosophy__bottom-img .img-position {
+    position: absolute;
+    right: -200px;
+    top: -140px;
+}
+
+.philosophy__bottom-text {
+    max-width: 380px;
+    margin: 0 auto;
+    margin-top: 150px;
+    cursor: default;
+    position: relative;
+}
+
+.philosophy__bottom-text p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 170.66%;
+  /* or 34px */
+  /* 1 */
+    color: #080808;
+}
+
+.philosophy__bottom-text::before {
+    content: "";
+    position: absolute;
+    background: url("../images/philosophy/cav.svg") no-repeat;
+    width: 18px;
+    height: 44px;
+    top: 0;
+    left: -32px;
 }

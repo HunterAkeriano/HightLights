@@ -62,7 +62,6 @@ a {
 
 /* Упрощаем работу с изображениями */
 img {
-  max-width: 100%;
   display: block;
 }
 
@@ -93,13 +92,13 @@ header {
   font-family: "Montserrat", sans-serif;
   opacity: 0.8;
   transition: all 0.3s;
-  background-color: rgba(120, 120, 120, 0.5);
+  background-color: rgb(89, 87, 87);
   z-index: 10;
 }
 
 header:hover {
   opacity: 1;
-  background-color: rgb(40, 39, 39);
+  background-color: black;
 }
 
 .header {
@@ -176,27 +175,71 @@ header:hover {
   border: 1px solid #ccc;
   background-color: rgba(192, 192, 192, 0);
 }
-.header .burger {
-  cursor: pointer;
+.header__mobile {
   display: none;
-  transition: 0.3s;
 }
-.header .burger .humb {
+.header__mobile .burger {
+  cursor: pointer;
+  display: flex;
+  margin-left: 100px;
+  align-items: center;
+  transition: all 0.3s;
+}
+.header__mobile .burger .humb {
   display: block;
-  background-color: #fff;
-  width: 25px;
-  height: 2px;
-  margin: 5px 0px;
-  transition: 0.3s;
+  width: 28px;
+  height: 1px;
+  background-color: #FFFFFF;
+  margin: 7px 0px;
+  transition: all 0.3s;
 }
-.header .burger.active .humb:nth-child(2) {
-  opacity: 0;
+.header__mobile .burger .burger-text {
+  margin-left: 20px;
 }
-.header .burger.active .humb:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+.header__mobile .burger .burger-text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
 }
-.header .burger.active .humb:nth-child(3) {
-  transform: translateY(-6px) rotate(-45deg);
+.header__mobile .header__content-btn .burger-none {
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header__mobile .header__content-btn .burger-none .humb {
+  display: block;
+  width: 28px;
+  height: 1px;
+  background-color: #FFFFFF;
+  margin: 7px 0px;
+  transition: all 0.3s;
+}
+.header__mobile .header__content-btn .burger-none.active .humb:nth-child(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+.header__mobile .header__content-btn .burger-none.active .humb:nth-child(2) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+.header__content-secret {
+  display: none;
+}
+.header__content-secret .header__sec nav button {
+  display: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  padding: 14px 35px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ccc;
 }
 
 .swipers {
@@ -293,7 +336,7 @@ header:hover {
   /* 4 */
   color: #FFFFFF;
 }
-.swipers__info-text .swipers__info-title span {
+.swipers__info-text .swipers__info-title .span-title {
   display: block;
 }
 .swipers__info-text .swipers__info-list {
@@ -362,14 +405,16 @@ header:hover {
   position: absolute;
   left: 0;
   bottom: 40px;
-  width: 60%;
+  width: 100%;
   z-index: 4;
   pointer-events: none;
 }
 .swipers .swipers-bottom .swipers-bottom-cont {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+.swipers .swipers-bottom .swipers-bottom-cont .swipers-bottom-language {
+  margin-right: 80px;
 }
 .swipers .swipers-bottom .swipers-bottom-cont .swipers-bottom-language a {
   pointer-events: all;
@@ -387,6 +432,7 @@ header:hover {
 }
 .swipers .swipers-bottom .swipers-bottom-cont .swipers-bottom-country {
   position: relative;
+  margin-right: 40px;
 }
 .swipers .swipers-bottom .swipers-bottom-cont .swipers-bottom-country select {
   cursor: pointer;
@@ -406,7 +452,7 @@ header:hover {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 5px 40px 5px 30px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0);
   box-shadow: 0px 1.15336px 1.22544px rgba(0, 0, 0, 0.2), inset 0px -0.288339px 0.0720847px rgba(255, 255, 255, 0.23);
 }
 .swipers .swipers-bottom .swipers-bottom-cont .swipers-bottom-country select option {
@@ -445,6 +491,12 @@ header:hover {
   margin-top: -3.5px;
   right: 13px;
 }
+.swipers .swipers-bottom .swipers-bottom-cont .swipers-flex {
+  display: flex;
+}
+.swipers .swipers-bottom .swipers-bottom-cont .swipers-bottom-phone {
+  margin-right: 40px;
+}
 .swipers .swipers-bottom .swipers-bottom-cont .swipers-bottom-phone a {
   pointer-events: painted;
   font-family: "Montserrat";
@@ -473,10 +525,12 @@ header:hover {
   background-color: #FFFFFF;
   color: black;
 }
+.philosophy .container {
+  padding-right: 0;
+}
 .philosophy__content {
   padding-top: 140px;
   padding-bottom: 78px;
-  padding-left: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -538,17 +592,17 @@ header:hover {
   margin-top: -0.5px;
 }
 .philosophy__bottom {
-  padding-left: 100px;
+  margin-top: 100px;
   padding-bottom: 140px;
   display: flex;
 }
-.philosophy__bottom-img {
+.philosophy__bottom-img .img-position-block {
   position: relative;
 }
-.philosophy__bottom-img .img-position {
+.philosophy__bottom-img .img-block-flex {
   position: absolute;
-  right: -200px;
-  top: -140px;
+  top: -100px;
+  left: 200px;
 }
 .philosophy__bottom-text {
   max-width: 380px;
