@@ -75,8 +75,11 @@
     display: none;
   }
   .header__content-secret .header__sec-info {
-    bottom: 50%;
-    left: 56px;
+    position: fixed;
+    overflow: hidden;
+    background-color: black;
+    bottom: 0;
+    left: 0;
     display: flex;
     padding: 0 30px;
     padding-bottom: 15px;
@@ -204,8 +207,7 @@
   }
   .header__content-secret .header__sec-info {
     justify-content: space-between;
-    left: -20px;
-    bottom: 80px;
+    bottom: 0px;
   }
   .header__content-secret .header__sec-info .block-flex {
     flex-direction: column;
