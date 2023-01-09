@@ -1070,6 +1070,17 @@
     line-height: 126.9%;
     margin-bottom: 0;
   }
+  .news-footer-content-right {
+    justify-content: flex-start;
+  }
+  .news-footer-content-right .news-flex-text {
+    width: 100%;
+    max-width: 100%;
+  }
+  .news-footer-content {
+    padding: 0 50px;
+    padding-top: 150px;
+  }
 }
 @media (max-width: 600px) {
   .news__project-top .news-project-top-one {
@@ -1119,5 +1130,17 @@
   }
   .news__text {
     padding-left: 0;
+  }
+  .news-footer-content {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 80px;
+  }
+  .news-footer-content-left p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
   }
 }
