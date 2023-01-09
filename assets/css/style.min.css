@@ -79,6 +79,51 @@ select {
   margin: 0 auto;
 }
 
+.preloader {
+  background: #080808;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  transition: all 0.5s;
+  opacity: 1;
+  visibility: visible;
+}
+.preloader .loader,
+.preloader .loader-show {
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.26em;
+  color: #FAFAFA;
+}
+.preloader .loader.done {
+  display: none;
+}
+.preloader .loader-show {
+  display: none;
+}
+.preloader .loader-show.done {
+  display: block;
+}
+
+.preloader.done {
+  visibility: hidden;
+  opacity: 0;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -710,14 +755,23 @@ header:hover {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 5;
+  z-index: 2;
   width: 100%;
   height: 100%;
   transition: all 0.3s;
 }
 .projects__top .projects__top-one-shadow .shadow-info {
   display: flex;
-  cursor: default;
+  cursor: pointer;
+}
+.projects__top .projects__top-one-shadow .shadow-info span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 170%;
+  /* or 19px */
+  color: #FFFFFF;
 }
 .projects__top .projects__top-one-shadow .shadow-info .info-center {
   margin: 0 18px;
@@ -726,7 +780,7 @@ header:hover {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 1;
   width: 100%;
   padding: 32px 32px;
   transition: all 0.3s;
@@ -741,7 +795,7 @@ header:hover {
   color: #FAFAFA;
   margin-bottom: 25px;
 }
-.projects__top .projects__top-one-shadow .projects__top-one-shadow-bottom a {
+.projects__top .projects__top-one-shadow .projects__top-one-shadow-bottom p {
   display: block;
   position: relative;
   font-family: "Montserrat";
@@ -753,7 +807,7 @@ header:hover {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.projects__top .projects__top-one-shadow .projects__top-one-shadow-bottom a::after {
+.projects__top .projects__top-one-shadow .projects__top-one-shadow-bottom p::after {
   content: "";
   position: absolute;
   width: 63px;
@@ -776,14 +830,23 @@ header:hover {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 5;
+  z-index: 2;
   width: 100%;
   height: 100%;
   transition: all 0.3s;
 }
 .projects__top-two .projects__top-one-shadow .shadow-info {
   display: flex;
-  cursor: default;
+  cursor: pointer;
+}
+.projects__top-two .projects__top-one-shadow .shadow-info span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 170%;
+  /* or 19px */
+  color: #FFFFFF;
 }
 .projects__top-two .projects__top-one-shadow .shadow-info .info-center {
   margin: 0 18px;
@@ -792,7 +855,7 @@ header:hover {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 1;
   width: 100%;
   padding: 32px 32px;
   transition: all 0.3s;
@@ -807,7 +870,7 @@ header:hover {
   color: #FAFAFA;
   margin-bottom: 25px;
 }
-.projects__top-two .projects__top-one-shadow .projects__top-one-shadow-bottom a {
+.projects__top-two .projects__top-one-shadow .projects__top-one-shadow-bottom p {
   display: block;
   position: relative;
   font-family: "Montserrat";
@@ -819,7 +882,7 @@ header:hover {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.projects__top-two .projects__top-one-shadow .projects__top-one-shadow-bottom a::after {
+.projects__top-two .projects__top-one-shadow .projects__top-one-shadow-bottom p::after {
   content: "";
   position: absolute;
   width: 63px;
@@ -833,6 +896,7 @@ header:hover {
   background-color: rgba(61, 60, 60, 0.8);
 }
 .projects__middle {
+  display: block;
   margin-bottom: 10px;
   position: relative;
 }
@@ -845,14 +909,22 @@ header:hover {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 5;
+  z-index: 2;
   width: 100%;
   height: 100%;
   transition: all 0.3s;
 }
+.projects__middle .projects__top-one-shadow span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
 .projects__middle .projects__top-one-shadow .shadow-info {
   display: flex;
-  cursor: default;
+  cursor: pointer;
 }
 .projects__middle .projects__top-one-shadow .shadow-info .info-center {
   margin: 0 18px;
@@ -864,7 +936,7 @@ header:hover {
   justify-content: space-between;
   left: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 1;
   width: 100%;
   padding: 32px 32px;
   transition: all 0.3s;
@@ -882,7 +954,7 @@ header:hover {
 .projects__middle .projects__top-one-shadow .projects__top-one-shadow-bottom h3 span {
   display: block;
 }
-.projects__middle .projects__top-one-shadow .projects__top-one-shadow-bottom a {
+.projects__middle .projects__top-one-shadow .projects__top-one-shadow-bottom p {
   display: block;
   text-align: right;
   padding-right: 100px;
@@ -896,7 +968,7 @@ header:hover {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.projects__middle .projects__top-one-shadow .projects__top-one-shadow-bottom a::after {
+.projects__middle .projects__top-one-shadow .projects__top-one-shadow-bottom p::after {
   content: "";
   position: absolute;
   width: 63px;
@@ -923,23 +995,31 @@ header:hover {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 5;
+  z-index: 2;
   width: 100%;
   height: 100%;
   transition: all 0.3s;
 }
 .projects .projects__middle-shadow .projects__top-one-shadow .shadow-info {
   display: flex;
-  cursor: default;
+  cursor: pointer;
 }
 .projects .projects__middle-shadow .projects__top-one-shadow .shadow-info .info-center {
   margin: 0 18px;
+}
+.projects .projects__middle-shadow .projects__top-one-shadow .shadow-info span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 19px;
+  color: #FFFFFF;
 }
 .projects .projects__middle-shadow .projects__top-one-shadow .projects__top-one-shadow-bottom {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 1;
   width: 100%;
   padding: 32px 32px;
   transition: all 0.3s;
@@ -954,7 +1034,7 @@ header:hover {
   color: #FAFAFA;
   margin-bottom: 25px;
 }
-.projects .projects__middle-shadow .projects__top-one-shadow .projects__top-one-shadow-bottom a {
+.projects .projects__middle-shadow .projects__top-one-shadow .projects__top-one-shadow-bottom p {
   display: block;
   position: relative;
   font-family: "Montserrat";
@@ -966,7 +1046,7 @@ header:hover {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.projects .projects__middle-shadow .projects__top-one-shadow .projects__top-one-shadow-bottom a::after {
+.projects .projects__middle-shadow .projects__top-one-shadow .projects__top-one-shadow-bottom p::after {
   content: "";
   position: absolute;
   width: 63px;
@@ -1006,16 +1086,24 @@ header:hover {
 }
 .projects__bottom .projects__top-one-shadow .shadow-info {
   display: flex;
-  cursor: default;
+  cursor: pointer;
 }
 .projects__bottom .projects__top-one-shadow .shadow-info .info-center {
   margin: 0 18px;
+}
+.projects__bottom .projects__top-one-shadow .shadow-info span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 19px;
+  color: #FFFFFF;
 }
 .projects__bottom .projects__top-one-shadow .projects__top-one-shadow-bottom {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 1;
   width: 100%;
   padding: 32px 32px;
   transition: all 0.3s;
@@ -1030,7 +1118,7 @@ header:hover {
   color: #FAFAFA;
   margin-bottom: 25px;
 }
-.projects__bottom .projects__top-one-shadow .projects__top-one-shadow-bottom a {
+.projects__bottom .projects__top-one-shadow .projects__top-one-shadow-bottom p {
   display: block;
   position: relative;
   font-family: "Montserrat";
@@ -1042,7 +1130,7 @@ header:hover {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.projects__bottom .projects__top-one-shadow .projects__top-one-shadow-bottom a::after {
+.projects__bottom .projects__top-one-shadow .projects__top-one-shadow-bottom p::after {
   content: "";
   position: absolute;
   width: 63px;
@@ -1774,19 +1862,20 @@ main {
   width: 100%;
 }
 .news__project-top .news-project-top-two .projects__top-one-shadow {
+  z-index: 5;
   padding: 32px 32px;
   opacity: 0;
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 5;
+  z-index: 8;
   width: 100%;
   height: 100%;
   transition: all 0.3s;
 }
 .news__project-top .news-project-top-two .projects__top-one-shadow .shadow-info {
   display: flex;
-  cursor: default;
+  cursor: pointer;
 }
 .news__project-top .news-project-top-two .projects__top-one-shadow .shadow-info .info-center {
   margin: 0 18px;
@@ -1795,7 +1884,7 @@ main {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 5;
   width: 100%;
   padding: 32px 32px;
   transition: all 0.3s;
@@ -1835,7 +1924,7 @@ main {
   /* 1 */
   color: #080808;
 }
-.news__project-top .news-project-top-two .mobile-bottom a {
+.news__project-top .news-project-top-two .mobile-bottom p {
   position: relative;
   display: block;
   font-family: "Montserrat";
@@ -1849,7 +1938,7 @@ main {
   color: #080808;
   margin-bottom: 12px;
 }
-.news__project-top .news-project-top-two .mobile-bottom a:after {
+.news__project-top .news-project-top-two .mobile-bottom p:after {
   content: "";
   position: absolute;
   width: 56px;
