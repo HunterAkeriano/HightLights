@@ -1590,3 +1590,98 @@
         color: #080808;
     }
 }
+
+@media (max-width: 1000px) {
+    .one-projects__text h5 span {
+        display: block;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+}
+
+@media (max-width: 768px) {
+    .one-projects {
+        padding-bottom: 350px;
+        padding-top: 350px;
+    }
+
+    .protext .protext__content {
+        padding-left: 0;
+        max-width: 520px;
+        margin: 104px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .one-projects {
+        padding-top: 120px;
+        padding-bottom: 107px;
+    }
+
+    .one-projects__text {
+        padding-left: 0;
+    }
+
+    .one-projects__text h5 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+
+    .one-projects__text .block-info {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .one-projects__text .block-info .block-flex:nth-child(2) {
+        margin: 25px 0px;
+    }
+
+    .one-projects .block-posit .block-link {
+        margin-left: 20px;
+    }
+
+    .protext .protext__content {
+        width: 100%;
+        margin: 80px auto;
+    }
+
+    .protext .protext__content h5 span {
+        display: inline;
+    }
+
+    .protext .protext__content h5 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    /* 1 */
+        color: #080808;
+    }
+
+    .proimg .img_middle {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .proimg .img_middle .img-left, .proimg .img_middle .img-right {
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    .probottom h5 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+        color: #F2F2F2;
+    }
+}
