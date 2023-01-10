@@ -1410,6 +1410,10 @@
     .n-info__content .n-info__content-left .n-info__content-left-in {
         display: none;
     }
+
+    .big-margin .big-link {
+        display: block;
+    }
 }
 
 @media (max-width: 800px) {
@@ -1432,6 +1436,41 @@
     .n-img-two .n-img-two-content .left-img, .n-img-two .n-img-two-content .right-img {
         width: 100%;
         margin: 5px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .n-swiper .container .one-news {
+        padding-left: 0;
+    }
+
+    .big-margin {
+        margin-bottom: 120px;
+    }
+
+    .n-swiper .container .n-swiper-title {
+        padding-left: 0;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+    /* identical to box height */
+        color: #000000;
+    }
+
+    .n-swiper .container .one-news .swiper-wrapper .swiper-slide h6 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #3A3E4B;
+        margin-bottom: 10px;
+    }
+
+    .n-swiper .container .one-news .swiper-wrapper .swiper-slide h6 span {
+        display: inline;
     }
 }
 
@@ -1497,5 +1536,57 @@
         color: #080808;
         opacity: 0.7;
         margin: 10px 0px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .project-html__text {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 80px;
+    }
+
+    .project-html__text .project-html-btn .project-text {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 626px) {
+    .project-html__text {
+        padding-left: 0px;
+    }
+
+    .project-html {
+        padding-top: 150px;
+    }
+
+    .project-html__text .project-html-btn .block-flex {
+        display: none;
+    }
+
+    .project-html__text .project-html-news {
+        display: inline;
+        padding: 7px 40px 7px 13px;
+        width: 50%;
+    }
+
+    .project-html__text h3 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+    /* 1 */
+        color: #080808;
+    }
+
+    .project-html__text .project-html-btn .project-text {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+    /* 1 */
+        color: #080808;
     }
 }

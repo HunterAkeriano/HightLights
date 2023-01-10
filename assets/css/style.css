@@ -2720,6 +2720,7 @@ main {
 
 .big-margin {
     margin-top: 50px;
+    margin-bottom: 200px;
 }
 
 .big-margin p {
@@ -2741,4 +2742,236 @@ main {
 
 .big-margin .n-text-ul p span {
     font-weight: 700;
+}
+
+.big-margin .big-link {
+    display: none;
+}
+
+.big-margin .big-link span {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170.66%;
+  /* identical to box height, or 24px */
+  /* 1 */
+    color: #080808;
+}
+
+.big-margin .big-link .big-link-a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.big-margin .big-link .big-link-a a:nth-child(1) {
+    margin-right: 4px;
+}
+
+.big-margin .big-link .big-link-a a:nth-child(2) {
+    margin: 0px 4px;
+}
+
+.big-margin .big-link .big-link-a a:nth-child(3) {
+    margin: 0px 4px;
+}
+
+.big-margin .big-link .big-link-a a:nth-child(4) {
+    margin-left: 4px;
+}
+
+.n-swiper {
+    overflow: hidden;
+    padding-bottom: 190px;
+}
+
+.n-swiper img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.n-swiper .container {
+    padding-right: 0;
+}
+
+.n-swiper .container .n-swiper-title {
+    padding-left: 80px;
+    font-family: "Montserrat";
+    margin: 0;
+    margin-bottom: 70px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+  /* identical to box height */
+  /* 1 */
+    color: #080808;
+}
+
+.n-swiper .container .one-news {
+    padding-left: 80px;
+}
+
+.n-swiper .container .one-news .swiper-wrapper .swiper-slide {
+    width: 100%;
+}
+
+.n-swiper .container .one-news .swiper-wrapper .swiper-slide h6 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #3A3E4B;
+    margin: 20px 0px;
+}
+
+.n-swiper .container .one-news .swiper-wrapper .swiper-slide h6 span {
+    display: block;
+}
+
+.n-swiper .container .one-news .swiper-wrapper .swiper-slide span {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 17px;
+    color: #828282;
+}
+
+.project-html {
+    padding-top: 200px;
+    margin-bottom: 50px;
+}
+
+.project-html__text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.project-html__text h3 {
+  /* H2 / bold / 36px */
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+  /* identical to box height */
+  /* 1 */
+    color: #080808;
+}
+
+.project-html__text .project-html-btn {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+  /* identical to box height */
+    letter-spacing: 0.06em;
+  /* 1 */
+    color: #828282;
+}
+
+.project-html__text .project-html-btn .project-text {
+    max-width: 450px;
+    margin-bottom: 40px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+  /* 1 */
+    color: #080808;
+}
+
+.project-html__text .project-html-btn span {
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.project-html__text .project-html-btn .all-news-btn {
+    margin-left: 0;
+}
+
+.project-html__text .project-html-btn span:nth-child(4) {
+    margin-right: 0;
+}
+
+.project-html__text .project-html-btn .project-html-btn-list.active {
+    color: #080808;
+    padding-bottom: 4px;
+    border-bottom: 1px solid black;
+}
+
+.project-html__text .project-html-news {
+    display: none;
+    background-color: #FAFAFA;
+    border: 1px solid #C4C4C4;
+    border-radius: 88px;
+    padding: 7px 40px 7px 13px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+  /* identical to box height */
+    letter-spacing: 0.06em;
+  /* 1 */
+    color: #080808;
+}
+
+.project-html__text .project-html-news option {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+  /* identical to box height */
+    letter-spacing: 0.06em;
+}
+
+.projs-html {
+    background: none;
+}
+
+.projs-html .projects__top {
+    margin-top: 0;
+}
+
+.projs-html .js-project-one {
+    display: none;
+}
+
+.projs-html .js-project-one.active {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.projs-html .js-two-block {
+    display: none;
+}
+
+.projs-html .js-two-block.active {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.images-projects {
+    background: none;
+    color: black;
+    padding-bottom: 50px;
+}
+
+.images-projects .left-title {
+    color: black;
+}
+
+.images-projects .right-text {
+    color: #080808;
 }
