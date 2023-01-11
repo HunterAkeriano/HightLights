@@ -3793,3 +3793,16 @@ main {
 .info-error {
   min-height: 100vh;
 }
+
+.popup__add-photo ul {
+  padding: 0;
+  margin: 20px 0px;
+}
+
+.popup__preview ul {
+  padding: 0;
+}
+
+.popup__preview li {
+  justify-content: center;
+}

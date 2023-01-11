@@ -1591,4 +1591,14 @@
   .news__project-middle .project-middle-right .projects__top-one-shadow {
     opacity: 1;
   }
+  .popup__group-photo .popup__buttom {
+    order: 3;
+    justify-content: flex-start;
+  }
+  .popup__group-photo .popup__preview li {
+    justify-content: flex-start;
+  }
+  .popup__group-photo .popup__preview {
+    order: 2;
+  }
 }

@@ -146,15 +146,18 @@ header {
   left: 0;
   top: 0;
   font-family: "Montserrat", sans-serif;
-  opacity: 0.8;
   transition: all 0.3s;
-  background-color: rgb(89, 87, 87);
+  opacity: 0.7;
+  background-color: black;
   z-index: 10;
+}
+
+header.active {
+  opacity: 1;
 }
 
 header:hover {
   opacity: 1;
-  background-color: black;
 }
 
 .header {
@@ -606,6 +609,7 @@ header:hover {
 }
 
 .philosophy {
+  overflow: hidden;
   background-color: #FFFFFF;
   color: black;
 }
@@ -719,6 +723,7 @@ header:hover {
 }
 
 .projects {
+  overflow: hidden;
   background-color: #080808;
   color: white;
   padding-top: 1px;
@@ -3076,11 +3081,22 @@ main {
   font-size: 11px;
   line-height: 13px;
   letter-spacing: 0.06em;
-  color: #3A3E4B;
+  color: #7d7c7c;
   width: 100%;
   border: 0;
   outline: 0;
   border-bottom: 1px solid #ccc;
+}
+.popup .popup__input .pop__up-top select option {
+  font-family: "Montserrat";
+  font-style: normal;
+  opacity: 0.7;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  color: #7d7c7c;
+  width: 100%;
 }
 .popup .popup__input .pop__up-bottom input {
   width: 100%;
@@ -3940,4 +3956,9 @@ main {
 }
 .aboutfoter__content-right .block-bottom .block-language a:nth-child(2) {
   margin: 0 10px;
+}
+
+.drop-html,
+.info-error {
+  min-height: 100vh;
 }
