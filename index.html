@@ -21,10 +21,212 @@
     />
     <title>Main Page</title>
 </head>
-<body>
-    
-    <div class="page">
-        <header>
+<body class="body">
+    <div id="popup" class="popup">
+        <span class="pop-close" href="#">X</span>
+        <div class="popup__body">
+          <form id="popup-form" class="popup__content close-area">
+            <fieldset form="popup-form" class="popup__first-box">
+              <div class="popup__first-conteiner pop-container">
+                <h3>Make request</h3>
+                <div class="popup__input">
+                    <div class="pop__up-top">
+                        <div class="popup-left">
+                            <input id="naming" type="text" placeholder="Name">
+                        </div>
+                        <div class="popup-right">
+                            <input id="lastnaming" type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="pop__up-top">
+                        <div class="popup-left">
+                            <input id="naming" type="number" placeholder="Phone">
+                        </div>
+                        <div class="popup-right">
+                            <input id="lastnaming" type="text" placeholder="Your City">
+                        </div>
+                    </div>
+                    <div class="pop__up-top">
+                        <div class="popup-left">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="popup-right">
+                           <select name="" id="">
+                            <option value="0">Property Type</option>
+                            <option value="0">Lol</option>
+                            <option value="0">Leon</option>
+                           </select>
+                        </div>
+                    </div>
+                    <div class="pop__up-bottom">
+                        <input type="text" placeholder="Your comment">
+                    </div>
+                </div>
+              </div>
+            </fieldset>
+      
+            <fieldset form="popup-form" class="popup__second-box">
+              <div class="popup__second-conteiner pop-container">
+                <div class="popup__name-group-area">Area (m2)</div>
+                <div class="popup__group-area">
+                  <div class="popup__option-item">
+                    <label class="popup__label" for="to-50"><p>to 50</p> </label>
+                    <input
+                      id="to-50"
+                      class="popup__radio-area"
+                      type="radio"
+                      name="area"
+                      value="to 50"
+                    />
+                    <div class="popup__line"></div>
+                  </div>
+                  <div class="popup__option-item">
+                    <label class="popup__label" for="50-150"><p>50-150</p> </label>
+                    <input
+                      id="50-150"
+                      class="popup__radio-area"
+                      type="radio"
+                      name="area"
+                      value="50-150"
+                      checked
+                    />
+                    <div class="popup__line"></div>
+                  </div>
+                  <div class="popup__option-item">
+                    <label class="popup__label" for="150-250"><p>150-250</p> </label>
+                    <input
+                      id="150-250"
+                      class="popup__radio-area"
+                      type="radio"
+                      name="area"
+                      value="150-250"
+                    />
+                    <div class="popup__line"></div>
+                  </div>
+                  <div class="popup__option-item">
+                    <label class="popup__label" for="250-400">
+                      <p>250-400</p>
+                    </label>
+                    <input
+                      id="250-400"
+                      class="popup__radio-area"
+                      type="radio"
+                      name="area"
+                      value="250-400"
+                    />
+                    <div class="popup__line"></div>
+                  </div>
+                  <div class="popup__option-item">
+                    <label class="popup__label" for="400-600">
+                      <p>400-600</p>
+                    </label>
+                    <input
+                      id="400-600"
+                      class="popup__radio-area"
+                      type="radio"
+                      name="area"
+                      value="400-600"
+                    />
+                    <div class="popup__line"></div>
+                  </div>
+                  <div class="popup__option-item">
+                    <label class="popup__label" for="600-800">
+                      <p>600-800</p>
+                    </label>
+                    <input
+                      id="600-800"
+                      class="popup__radio-area"
+                      type="radio"
+                      name="area"
+                      value="600-800"
+                    />
+                    <div class="popup__line"></div>
+                  </div>
+                  <div class="popup__option-item">
+                    <label class="popup__label" for="800-1000">
+                      <p>800-1000</p>
+                    </label>
+                    <input
+                      id="800-1000"
+                      class="popup__radio-area"
+                      type="radio"
+                      name="area"
+                      value="800-1000"
+                    />
+                    <div class="popup__line"></div>
+                  </div>
+                  <div class="popup__option-item">
+                    <label class="popup__label" for="1000+">
+                      <p>1000+</p>
+                    </label>
+                    <input
+                      id="1000+"
+                      class="popup__radio-area"
+                      type="radio"
+                      name="area"
+                      value="1000+"
+                    />
+                    <div class="popup__line"></div>
+                  </div>
+                </div>
+                <div class="popup__group-photo">
+                  <div class="popup__add-photo">
+                    <input
+                      class="popup__input-foto _req"
+                      type="file"
+                      name="photo"
+                      id="photo"
+                      accept="image/*"
+                    />
+                    <div class="popup__preview">
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="popup__item-photo">
+                    <label for="photo">
+                      <div class="popup__img-add-photo"></div>
+                    </label>
+                    <div class="popup__coment-photo">
+                      <p>Attach your file</p>
+                      <p class="popup__note-photo">File size not more than 10 MB</p>
+                    </div>
+                  </div>
+                  <span class="popup__buttom popup-link" id="btn">Send Request</span>
+      
+                </div>
+                <div class="popup__text">
+                  It is a long established fact that a reader will be distracted by
+                  the readable content of a page when looking at its layout. The point
+                  of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content
+                  here', making it look like readable English.
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="popup__criss-cross icon-criss-cross close-popup"></div>
+      </div>    <div id="popup2" class="popup2 popup">
+        <span class="close-pop-ups-2">X</span>
+        <!-- <a href="#header" class="popup__area-lol"></a> -->
+        <div class="popup2__body">
+          <div class="popup2__content close-area">
+            <!--<div class="popup2__box">-->
+            <h4 class="popup2__title">Thank you for your message!</h4>
+            <div class="popup2__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante
+              felis, aliquam eu enim sed, ornare pretium velit.
+            </div>
+            <span class="popup2__button button popup-link">
+                Send Request
+            </span>
+            <!--</div>-->
+          </div>
+        </div>
+        <div class="popup2__criss-cross icon-criss-cross close-popup"></div>
+      </div>    <div class="page">
+        <header id="header" class="lock-padding">
             <div class="container">
                 <div class="header">
                 <div class="header__logo">
@@ -34,14 +236,14 @@
                     <nav>
                         <ul>
                         <li class="li-one"><a class="header-link"  href="project.html">Projects</a></li>
-                        <li><a class="header-link" href="#">About us</a></li>
+                        <li><a class="header-link" href="about.html">About us</a></li>
                         <li><a class="header-link" href="news.html">Blog</a></li>
                         <li><a class="header-link" href="contact.html">Contacts</a></li>
                         </ul>
                     </nav>
                     <div class="header__content-btn">
                         <a href="#">En</a>
-                        <button type="button">Send Request</button>
+                        <a href="#popup" class="popup-link">Send Request</a>
                     </div>
                   
                 </div>
@@ -51,15 +253,15 @@
                             <ul>
                                 <li class="li-one"><a class="header-link" href="index.html">Home</a></li>
                             <li class="li-one"><a class="header-link"  href="project.html">Projects</a></li>
-                            <li><a class="header-link" href="#">About us</a></li>
+                            <li><a class="header-link" href="about.html">About us</a></li>
                             <li><a class="header-link" href="news.html">Blog</a></li>
                             <li class="last-link"><a class="header-link last-link" href="contact.html">Contacts</a></li>
                             </ul>
-                            <button>Send Request</button>
+                            <a href="#popup" class="popup-link">Send Request</a>
                         </nav>
                         <div class="header__content-btn">
                             <a href="#">En</a>
-                            <button type="button">Send Request</button>
+                            <a href="#popup" class="popup-link">Send Request</a>
                         </div>
                        
                     </div>
@@ -102,7 +304,7 @@
                     </div>
                     <div class="header__content-btn">
                         <a href="#">En</a>
-                        <button type="button">Send Request</button>
+                        <a href="#popup" class="popup-link">Send Request</a>
                         <div class="burger-none">
                             <span class="humb"></span>
                             <span class="humb"></span>
@@ -117,7 +319,6 @@
        
 
         <main class="main">
-            
                 <div class="preloader" id="page-preloader">
                     <div class="loader">
                      <span>HI</span>   <span id="load__perc">0%</span>
@@ -357,7 +558,7 @@
                             </div>
                             <div class="images__content-right">
                                 <p class="right-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
-                                <button>Make request</button>
+                                <a href="#popup" class="popup-link">Make request</a>
                             </div>
                 
                             <div class="images__position">
@@ -428,7 +629,7 @@
                                     </div>
                                 </div>
                                 <div class="drop__content-flex-right">
-                                    <button class="secret-button">Make request</button>
+                                    <a  href="#popup" class="secret-button popup-link">Make request</a>
                                     <div class="block-info">
                                         <a href="mailto:info@gmail.com">info@gmail.com</a>
                                         <div class="flex-right-lan">
@@ -440,7 +641,7 @@
                                    
                                 </div>
                             </div>
-                            <button>Make request</button>
+                            <a href="#popup" class="popup-link secret-button-none">Make request</a>
                         </div>
                      
                     </div>
