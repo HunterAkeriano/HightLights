@@ -3356,3 +3356,113 @@ main {
   max-width: 400px;
   margin: 0 auto;
 }
+
+.swipers-about {
+  overflow: hidden;
+  margin-top: 80px;
+}
+.swipers-about .container {
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.swipers-about .container .swipers-about__left {
+  position: relative;
+  margin-left: 80px;
+}
+.swipers-about .container .swipers-about__left h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  margin: 0;
+  margin: 40px 0px;
+  /* 1 */
+  color: #080808;
+}
+.swipers-about .container .swipers-about__left h5 span {
+  display: block;
+}
+.swipers-about .container .swipers-about__left p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  /* 1 */
+  color: #080808;
+  max-width: 383px;
+}
+.swipers-about .container .swipers-about__left .swiper-button-next::after {
+  display: none;
+}
+.swipers-about .container .swipers-about__left .swiper-button-prev::after {
+  display: none;
+}
+.swipers-about .container .swipers-about__left .swiper-button-next {
+  z-index: 5;
+  position: absolute;
+  color: #fff;
+  right: 0;
+  top: 320px;
+  font-size: 11px;
+  margin-left: 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  /* 5 */
+  color: #828282;
+  opacity: 0.5;
+}
+.swipers-about .container .swipers-about__left .swiper-button-next img {
+  margin-left: 12px;
+  width: 12px;
+  height: 12px;
+}
+.swipers-about .container .swipers-about__left .swiper-button-prev {
+  z-index: 5;
+  position: absolute;
+  color: #fff;
+  top: 320px;
+  left: 0;
+  font-size: 11px;
+  margin-right: 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  /* 5 */
+  color: #828282;
+  opacity: 0.5;
+}
+.swipers-about .container .swipers-about__left .swiper-button-prev img {
+  margin-right: 12px;
+  width: 12px;
+  height: 12px;
+}
+.swipers-about .container .swipers-about__left .swiper-pagination {
+  top: 319px;
+  width: 70%;
+  left: 14%;
+  z-index: 5;
+  height: 1px;
+}
+.swipers-about .container .swipers-about__left .swiper-pagination-progressbar {
+  background: #030303;
+}
+.swipers-about .container .swipers-about__left .swiper-pagination-progressbar-fill {
+  background-color: #ccc;
+}
+.swipers-about .container .swiper-container {
+  width: 50%;
+  overflow: hidden;
+}
+.swipers-about .container .swiper-container img {
+  max-width: 100%;
+}
