@@ -3772,3 +3772,8 @@ main {
 .aboutfoter__content-right .block-bottom .block-language a:nth-child(2) {
   margin: 0 10px;
 }
+
+.drop-html,
+.info-error {
+  min-height: 100vh;
+}

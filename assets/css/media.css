@@ -1883,6 +1883,20 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
+
+    .aboutfoter__title {
+        padding-left: 0;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    .aboutfoter__content {
+        padding-left: 0;
+    }
+
+    .aboutfoter {
+        margin-top: 80px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1909,5 +1923,22 @@
 
     .aboutbottom__content .aboutbottom-right .nums .nums-block p {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .aboutfoter__content {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .aboutfoter__content-left {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .aboutfoter__content-right {
+        width: 100%;
+        max-width: 100%;
     }
 }
