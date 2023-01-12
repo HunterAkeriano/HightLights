@@ -1619,3 +1619,8 @@
     top: 149px;
   }
 }
+@media (max-width: 600px) {
+  .one-projects {
+    min-height: 100vh;
+  }
+}
