@@ -309,9 +309,14 @@ header:hover {
 .swipers .swiper-container .swiper-wrapper {
   height: 744px;
 }
+.swipers .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
 .swipers .swiper-container .swiper-wrapper .swiper-slide img {
   height: 100%;
+  max-height: 100%;
   width: 100%;
+  max-width: 100%;
 }
 .swipers .swiper-container .swiper-button-next::after {
   display: none;

@@ -1602,3 +1602,20 @@
     order: 2;
   }
 }
+@media (max-width: 700px) {
+  .swipers .swiper-container .swiper-wrapper {
+    min-height: 100vh;
+    max-height: 600px;
+  }
+  .swipers {
+    min-height: 100vh;
+    max-height: 600px;
+  }
+  .swipers .swiper-container .swiper-button-prev,
+  .swipers .swiper-container .swiper-button-next {
+    top: 150px;
+  }
+  .swipers .swiper-container .swiper-pagination {
+    top: 149px;
+  }
+}

@@ -1960,4 +1960,21 @@
   .news__project-middle .project-middle-right .projects__top-one-shadow {
         opacity: 1;
     }
+
+    .popup__group-photo .popup__buttom {
+        -ms-flex-order: 3;
+        order: 3;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    .popup__group-photo .popup__preview li {
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    .popup__group-photo .popup__preview {
+        -ms-flex-order: 2;
+        order: 2;
+    }
 }
