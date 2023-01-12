@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 1100px) {
   .header__mobile .burger .burger-text.active {
     display: none;
@@ -524,9 +525,8 @@
   .projects__top-two img {
     width: 100%;
   }
-  .projects__top-one,
-  .projects__top-two {
-    margin-bottom: 10px;
+  .projects__top-one {
+    margin-bottom: 8px;
   }
   .projects__top {
     margin-top: 100px;
@@ -1622,5 +1622,18 @@
 @media (max-width: 600px) {
   .one-projects {
     min-height: 100vh;
+  }
+  .proimg .img_middle .img-left, .proimg .img_middle .img-rightХ {
+    margin: 0;
+  }
+  .proimg .img_top,
+  .proimg .lol-ma {
+    margin-top: 0;
+  }
+  .proimg .lol-ma {
+    margin-bottom: 8px;
+  }
+  .proimg .img_middle .img-left, .proimg .img_middle .img-right {
+    margin-bottom: 8px;
   }
 }
